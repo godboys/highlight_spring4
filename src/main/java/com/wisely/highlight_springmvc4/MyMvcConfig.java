@@ -27,7 +27,7 @@ public class MyMvcConfig {
     public InternalResourceViewResolver viewResolver(){
         // JSP的ViewResolver，用来映射路径和实际页面的位置
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-        viewResolver.setPrefix("/WEB-INF/classes/views");
+        viewResolver.setPrefix("/WEB-INF/classes/views/");
         viewResolver.setSuffix(".jsp");
         viewResolver.setViewClass(JstlView.class);
         return viewResolver;
